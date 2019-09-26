@@ -27,7 +27,7 @@ type Records struct {
 //DefaultPageNumber defines constant of type string
 const DefaultPageNumber = "1"
 
-func getMovieTitles(movieTitle string, year string, pageNumber string) {
+func GetMovieTitles(movieTitle string, year string, pageNumber string) {
 	if pageNumber == "" {
 		pageNumber = DefaultPageNumber
 	}
@@ -76,5 +76,5 @@ func main() {
 	fmt.Print("Year: ")
 	fmt.Scanf("%s", &year)
 
-	getMovieTitles(movieTitle, year, page)
+	GetMovieTitles(movieTitle, year, page)
 }
